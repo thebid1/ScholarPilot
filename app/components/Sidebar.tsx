@@ -10,10 +10,10 @@ import {
   Search,
   ClipboardList,
   MessageSquare,
-  GraduationCap,
   MessageCircle,
   Sparkles,
 } from 'lucide-react';
+import AppLogo from './AppLogo';
 
 const links = [
   { href: '/', label: 'Home', icon: Home },
@@ -86,9 +86,7 @@ export default function Sidebar() {
       {/* Desktop sidebar */}
       <aside className="hidden md:flex flex-col w-64 h-[100dvh] sticky top-0 border-r border-[var(--border)] surface px-4 py-6">
         <Link href="/" className="flex items-center gap-3 font-bold text-xl px-2 mb-8 text-primary">
-          <div className="p-2 rounded-xl gradient-emerald text-white shadow-md">
-            <GraduationCap className="w-6 h-6" />
-          </div>
+          <AppLogo size={48} />
           ScholarPilot
         </Link>
 

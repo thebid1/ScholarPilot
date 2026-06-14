@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import { UserProfile } from '@/app/types';
 import { DISCIPLINES, COUNTRIES } from '@/app/lib/mockData';
-import { GraduationCap, ChevronRight, ChevronLeft, Check, User, BookOpen, Target } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Check, User, BookOpen, Target } from 'lucide-react';
+import AppLogo from './AppLogo';
 
 interface ProfileFormProps {
   onComplete: (profile: UserProfile) => void;
@@ -83,9 +84,7 @@ export default function ProfileForm({ onComplete }: ProfileFormProps) {
       <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full blur-3xl opacity-20 pointer-events-none" style={{ backgroundColor: 'var(--primary-light)' }} />
 
       <div className="relative flex items-center gap-3 font-bold text-2xl mb-6" style={{ color: 'var(--primary)' }}>
-        <div className="p-2 rounded-xl gradient-emerald text-white shadow-lg shadow-emerald-200">
-          <GraduationCap className="w-7 h-7" />
-        </div>
+        <AppLogo size={64} />
         ScholarPilot AI
       </div>
 

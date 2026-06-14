@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Search, PenLine, CalendarCheck, ChevronRight, GraduationCap } from 'lucide-react';
+import { Search, PenLine, CalendarCheck, ChevronRight } from 'lucide-react';
+import AppLogo from './AppLogo';
 
 interface OnboardingScreenProps {
   onStart: () => void;
@@ -44,9 +45,7 @@ export default function OnboardingScreen({ onStart }: OnboardingScreenProps) {
       {/* Top bar */}
       <div className="safe-top flex items-center justify-between mb-6">
         <div className="flex items-center gap-2 font-extrabold text-lg" style={{ color: 'var(--primary)' }}>
-          <div className="p-1.5 rounded-lg gradient-emerald text-white shadow-md shadow-emerald-200">
-            <GraduationCap className="w-5 h-5" />
-          </div>
+          <AppLogo size={56} />
           ScholarPilot
         </div>
         <button onClick={() => setIndex(slides.length - 1)} className="text-sm font-bold text-tertiary hover:text-secondary">

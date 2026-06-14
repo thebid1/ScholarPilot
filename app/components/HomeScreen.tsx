@@ -16,6 +16,7 @@ import {
   Briefcase,
 } from 'lucide-react';
 import ChatFAB from './ChatFAB';
+import InstallPrompt from './InstallPrompt';
 
 function findScholarship(id: string) {
   return scholarships.find((s) => s.id === id);
@@ -88,6 +89,8 @@ export default function HomeScreen() {
       </header>
 
       <main className="flex-1 px-4 pt-5 max-w-md mx-auto w-full space-y-5">
+        <InstallPrompt />
+
         {/* Priority banner */}
         <section className="relative overflow-hidden rounded-3xl gradient-emerald text-white p-5 shadow-xl">
           <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/10 blur-2xl" />

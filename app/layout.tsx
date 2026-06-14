@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="apple-touch-icon" href="/icon-192.svg" />
+        <link rel="apple-touch-icon" href="/icon-192.png" />
       </head>
       <body className="font-sans antialiased page-bg min-h-[100dvh]">
         <RegisterSW />

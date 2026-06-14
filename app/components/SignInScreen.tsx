@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { UserSession } from '@/app/types';
-import { GraduationCap, Mail, Lock, ArrowRight } from 'lucide-react';
+import { Mail, Lock, ArrowRight } from 'lucide-react';
+import AppLogo from './AppLogo';
 
 interface SignInScreenProps {
   onSignIn: (session: UserSession) => void;
@@ -41,9 +42,7 @@ export default function SignInScreen({ onSignIn }: SignInScreenProps) {
 
         <div className="relative z-10">
           <div className="flex items-center gap-3 text-white font-extrabold text-2xl mb-3">
-            <div className="p-2 rounded-xl bg-white shadow-lg" style={{ color: 'var(--primary)' }}>
-              <GraduationCap className="w-7 h-7" />
-            </div>
+            <AppLogo size={64} className="bg-white shadow-lg" />
             ScholarPilot
           </div>
           <h1 className="text-3xl font-extrabold text-white leading-tight mb-2">
