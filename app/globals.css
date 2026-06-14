@@ -105,7 +105,7 @@ body {
     filter: brightness(1.1);
   }
   .input {
-    @apply w-full rounded-xl border border-[var(--border)] px-4 py-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent transition-shadow;
+    @apply w-full rounded-xl border border-[var(--border)] px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent transition-shadow;
     background-color: var(--surface-muted);
     color: var(--text);
   }

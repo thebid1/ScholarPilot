@@ -8,6 +8,7 @@ import SignInScreen from '@/app/components/SignInScreen';
 import ProfileForm from '@/app/components/ProfileForm';
 import Sidebar from '@/app/components/Sidebar';
 import OpportunitiesScreen from '@/app/components/OpportunitiesScreen';
+import SplashScreen from '@/app/components/SplashScreen';
 
 export default function OpportunitiesPage() {
   const [session, setSession] = useState<UserSession | null>(null);
@@ -40,11 +41,7 @@ export default function OpportunitiesPage() {
   }
 
   if (!loaded) {
-    return (
-      <div className="min-h-[100dvh] flex items-center justify-center text-tertiary text-sm page-bg">
-        Loading ScholarPilot…
-      </div>
-    );
+    return <SplashScreen />;
   }
 
   if (!session) {

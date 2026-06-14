@@ -9,13 +9,16 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     title: "ScholarPilot AI",
-    statusBarStyle: "default",
+    statusBarStyle: "black-translucent",
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
   themeColor: "#0a0a0a",
 };
 
@@ -28,6 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="apple-touch-icon" href="/icon-192.png" />
+        <link rel="preload" as="image" href="/scholar_crop.png" />
       </head>
       <body className="font-sans antialiased page-bg min-h-[100dvh]">
         <RegisterSW />
